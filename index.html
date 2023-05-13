@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/eab848cb9a.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h2>password generator</h2>
+        <div class="input-field">
+            <input type="text" value="tGm9BPL3N~dN+v~3&#.ZzvlWS" disabled>
+            <span class="fa-solid fa-clipboard"></span>
+            <div class="indicator"></div>
+            <div class="details">
+                <h4>password length</h4>
+                <span></span>
+            </div>
+            <input type="range" min="1" max="30" step="1">
+        </div>
+        <div class="content">
+            <h3>password settings</h3>
+            <div class="setting">
+                <span class="option">
+                    <input type="checkbox" id="lowercase" checked>
+                    <label for="lowercase">lowercase (a - z)</label>
+                </span>
+                <span class="option">
+                    <input type="checkbox" id="uppercase" >
+                    <label for="uppercase">uppercase (A - Z)</label>
+                </span>
+                <span class="option">
+                    <input type="checkbox" id="number">
+                    <label for="number">number (0 - 9)</label>
+                </span>
+                <span class="option">
+                    <input type="checkbox" id="symble">
+                    <label for="symble">symble (!@_+%)</label>
+                </span>
+            </div>
+        </div>
+        <div class="generate-btn">generate password</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000;
+}
+.container{
+    width: 450px;
+    background: #6facf2;
+    padding: 10px;
+}
+.container h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+}
+.container .input-field{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 1px solid;
+    gap: 10px;
+    margin-top: 5px;
+    position: relative;
+    padding: 10px;
+}
+.input-field input[type="text"]{
+    width: 100%;
+    height: 35px;
+    background: #fff;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0 30px 0 10px;
+}
+.input-field .fa-solid{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.input-field .indicator{
+    width: 100%;
+    height: 10px;
+    position: relative;
+    border-radius: 8px;
+}
+.input-field .indicator::before{
+    content: "";
+    width: 0;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    transition: .3s;
+}
+.input-field .indicator#week::before{
+    width: calc(100% / 3 );
+    background: #ff0000;
+}
+.input-field .indicator#medium::before{
+    width: calc(100% / 2 + 70px);
+    background: #eeff00;
+}
+.input-field .indicator#strong::before{
+    width: 100%;
+    background: #48ff00;
+}
+.input-field .details{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.details h4{
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.details span{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.input-field input[type="range"]{
+    width: 100%;
+    cursor: pointer;
+}
+.container .content{
+    width: 100%;
+}
+.content h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.content .setting{
+    width: 99%;
+    height: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 10px;
+    margin-top: 10px;
+}
+.setting .option{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    text-transform: capitalize;
+}
+.option input{
+    cursor: pointer;
+    width: 18px;
+    height: 18px
+
+}
+.option label{
+    user-select: none;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+.setting .option:first-child label{
+    text-transform: lowercase;
+    pointer-events: none;
+    opacity: .7;
+}
+.setting .option:first-child input{
+    text-transform: lowercase;
+    pointer-events: none;
+    opacity: .7;
+}
+.container .generate-btn{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    background: #3326bd;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 50px;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 800;
+    user-select: none;
+    color: #fff;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .4s;
+}
+.container .generate-btn:hover{
+    background: #181070;
+}
